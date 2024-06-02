@@ -1,0 +1,102 @@
+/*
+ * UI Button
+ *  
+ * Create UI Buttons using this module.
+ *
+ * Note: To create new type of button
+ *       first extend '.btn-base'.
+ */
+
+/*
+ * Base for all buttons 
+ */
+
+.btn-base {
+    display: inline-block;
+    white-space: nowrap;
+    cursor: pointer;
+    vertical-align: middle;
+    -ms-touch-action: manipulation;
+    touch-action: manipulation;
+
+    /* Prevent user from selecting the UI element */
+    .user-select(none);
+}
+
+/*
+ * Simple button
+ */
+
+.btn {
+    /* Extend base btn */
+    &:extend(.btn-base);
+
+    /* Unique styles */
+    font-family: 'MuseoSansLight';
+    letter-spacing: 0;
+
+    &--border {
+        border: 2px solid @black;
+        padding: 10px 20px;
+        .transition(0.3s all);
+
+        &:hover {
+            border-color: @red;
+        }
+    }
+
+    &--full {
+        width: 100%;
+        background-color: @black;
+        color: @white;
+        padding: 10px 0;
+        height: 40px;
+        .transition(0.3s all);
+
+        &:hover {
+            opacity: 0.8;
+        }
+    }
+
+    &--more {
+        position: relative;
+        margin-right: 30px;
+
+        &:hover {
+            .btn__arrow {
+                .translate(80%, -50%);
+            }
+        }
+    }
+
+    &--white {
+        color: @white;
+        border-color: @white;
+
+        &:hover {
+            color: @white!important;
+        }
+    }
+
+    &--red {
+        &:hover {
+            color: @red;
+        }
+    }
+
+    &__arrow {
+        position: absolute;
+        margin-left: 10px;
+        font-size: 12px;
+        top: 50%;
+        right: -20px;
+        .translate(20%, -50%);
+        .transition(0.3s all);
+    }
+
+    &--black {
+        color: #000;
+        border: 2px solid;
+        border-color: #000;
+    }
+}

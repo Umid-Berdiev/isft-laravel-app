@@ -1,0 +1,161 @@
+
+.news{
+	padding: 45px 0 15px;
+	background-color: @white;
+
+	&__mailbox{
+		text-align: center;
+		background-color: #F01529;
+		padding: 45px 30px;
+		margin-bottom: 30px;
+		min-height: 120px;
+	}
+
+	&__icon{
+		margin-bottom: 45px;
+	}
+
+	&__subscribe{
+		font: 38px "BebasNeueBold";
+		width: 100%;
+		margin-bottom: 45px;
+	}
+
+	&__input{
+		background-color: @white;
+		width: 100%;
+		text-align: center;
+		padding: 10px 0;
+		height: 40px;
+		margin-bottom: 10px;
+	}
+
+	&__card{
+		margin-bottom: 30px;
+		width: 100%;
+
+		&--sm{
+			height: 140px;
+		}
+	}
+
+	&__img{
+		background-position: center center;
+		background-repeat: no-repeat;
+		-webkit-background-size: cover;
+		background-size: cover;
+		height: 224px;		
+
+		&--sm{
+			width: 170px;
+			height: 140px;
+			float: left;
+			display: inline-block;
+		}
+	}
+
+	&__info{
+		position: relative;
+
+		&--sm{ 
+			max-width: 240px;
+			height: 140px;
+			margin-left: 30px;
+			display: inline-block;
+			float: left;
+		}
+	}
+
+}
+
+//__________________________________________________________________________________________
+
+@media(max-width: 1200px){
+	.news{
+
+		&__mailbox{
+			display: none;
+
+		}
+
+		&__inputs{
+			width: 300px;
+			display: inline-block;
+		}
+
+		&__icon{
+			display: none;
+		}
+
+		&__subscribe{
+			margin: 15px 0;
+			font: 38px "BebasNeueBold";
+			display: block;
+			float: left;
+			width: 300px;
+		}
+	}
+}
+//__________________________________________________________________________________________
+
+@media(max-width: 992px){
+	.news{
+		
+		&__mailbox{
+			display: none;
+		}
+	}
+}
+
+//__________________________________________________________________________________________
+
+@media(max-width: 768px){
+	.news{
+
+		&__mailbox{
+			width: 100%;
+			padding: 15px;
+			position: relative;
+			display: block;
+			text-align: center;
+		}
+
+		&__icon{
+			display: inline-block;
+			width: 40px;
+			margin: 0 20px 0px 80px;
+		}
+
+		&__subscribe{
+			font: 28px "BebasNeueBold";
+			display: inline-block;
+			margin: 0 auto 10px;
+			float: none;
+			text-align: left;
+			width: 200px;
+		}
+
+		&__info{
+			min-height: 100px;
+		}
+
+		&__title--sm{
+			font-size: 28px;
+		}
+
+		&__text{
+			display: none;
+		}
+	}
+}
+
+//__________________________________________________________________________________________
+
+@media(max-width: 540px){
+	.news{
+
+		&__info{
+			max-width: 220px;
+		}
+	}
+}

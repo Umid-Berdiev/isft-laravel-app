@@ -1,0 +1,90 @@
+/*
+ * Global styles
+ *
+ * Define global styles.
+ */
+
+
+html, body{
+	min-height: 100%;
+	height: auto !important;
+	height: 100%;
+}
+
+body{
+	padding-top: 90px;
+	height: 100%;
+	color: @base-font-color;
+	font-size: @base-font-size;
+	font-weight: @base-font-weight;
+	font-family: @base-font-family;
+	background-color: @body-background-color;
+	line-height: @base-line-height;
+
+	&.cyrillic {
+
+		& .title, & .sub-title, & .admission__title, & .news__subscribe, & .news-card__title {
+			line-height: 1.2;
+			font-family: "FiraSansRegular";
+		}
+
+		& .title {
+			font-size: 28px;
+			letter-spacing: 1px;
+		}
+
+		& .sub-title {
+			font-size: 20px;
+		}
+
+		& .admission__title {
+			font-size: 40px;
+		}
+
+		& .news__subscribe {
+			font-size: 24px;
+			margin-bottom: 35px;
+		}
+
+		& .news-card__title {
+			font-size: 26px;
+
+			&--sm {
+				font-size: 22px;
+			}
+		}
+	}
+}
+
+@media(max-width: 992px){
+	body{
+		padding-top: 60px;
+	}
+}
+
+
+/*
+ * Global classes
+ * 
+ * Define global classes to apply
+ * to  your <body/>.
+ *
+ * Note: Nested selectors allowed.
+ */
+
+
+/* Example */
+.nav-opened{ /* ... */ };
+
+
+/*
+ * Global Media Queries
+ *
+ * Define global media queries.
+ */
+
+
+// ...
+
+
+

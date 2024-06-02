@@ -1,0 +1,57 @@
+.license{
+	padding: 60px 0 0px;
+	background-color: @white;
+	height: 630px;
+	position: relative;	
+	overflow: hidden;
+
+	&__left{
+		position: absolute;
+		height: 100%;
+		width: 35%;
+		top: 0;
+		left: 0;
+		background-image: linear-gradient(to right, #fff, rgba(255,255,255,0));
+		z-index: 2;
+	}
+	&__right{
+		position: absolute;
+		height: 100%;
+		width: 35%;
+		top: 0;
+		right: 0;
+		background-image: linear-gradient(to left, #fff, rgba(255,255,255,0));
+		z-index: 2;
+	}
+
+	&__slider {
+		margin-top: 20px;
+	}
+
+	&__img{
+		height: 350px;
+		.transition(.3s all);
+	}
+
+	&__arrows{
+		position: absolute;
+		bottom: 5%;
+		left: 50%;
+		.translate(-50%, -50%);
+		z-index: 30;
+
+		&--icon{
+			// height: 40px;
+			padding: 15px;
+			font-size: 16px;
+			border: 2px solid @black;
+			line-height: .6;
+			margin: 0 10px;
+		}
+	}
+}
+.slick-center { 
+	transform: scale(1.2);
+	.transition(.6s all);
+	z-index: 3;
+}

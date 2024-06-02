@@ -1,0 +1,42 @@
+/*
+ * UI Input
+ *  
+ * Create UI Inputs using this module
+ */
+
+.input {
+	border: 2px solid @black;
+	padding: 10px 20px;
+	width: 100%;
+
+	&:focus {
+		background-color: #f9f9f9;
+	}
+	
+	.placeholder({color: #757575;});
+
+	&:disabled {
+		background-color: @color-gray;
+		color: @color-gray-text;
+	}
+
+	&[readonly] {
+		background-color: @color-gray;
+		color: @color-gray-text;
+		opacity:1;
+	}
+
+	&--textarea {
+		min-height: 177px;
+		max-height: 177px;
+		resize: none;
+	}
+
+	&--textarea-callback {
+		min-height: 104px;
+		height: 114px;
+		max-height: 114px;
+	}
+	
+	
+}

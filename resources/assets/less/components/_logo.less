@@ -1,0 +1,43 @@
+/*
+ * Site Logo 
+ *
+ * Here you define your base logo styles
+ * it may be reused throughout your website
+ */
+
+.logo{
+	.transition(.5s all);
+	width: 82px;
+}
+
+.logo-min{
+	display: none;
+	font-size: 48px;
+}
+
+.flag{
+	height: 80px;
+}
+
+//____________________________________________________________
+
+
+@media(max-width: 1200px){
+	.logo{
+		display: none;
+	}
+
+	.logo-min{
+		display: block;
+	}
+}
+
+//____________________________________________________________
+
+
+@media(max-width: 992px){
+
+	.logo-min{
+		font-size: 40px;
+	}
+}

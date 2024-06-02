@@ -1,0 +1,67 @@
+.faq {
+	padding: 45px 0 60px;
+	background-color: @white;
+
+	&__nav {
+		// .box-shadow(-1px, 1px, 15px, rgba(0,0,0,.1));
+		overflow: hidden;
+
+		&-link {
+			.text-bold;
+			display: block;
+			padding: 10px 20px;
+			border-bottom: 1px solid @color-gray;
+			.transition(all .2s ease);
+
+			&.active {
+				color: @red;
+				.text-bold;
+			}
+
+			&:hover {
+				color: @red;
+				// background-color: #f9f9f9;
+			}
+		}
+	}
+
+	&__content {
+		.blocks-shadow;
+		background: #fff;
+
+		&-item {
+			.lh;
+			border-bottom: 1px solid @color-gray;
+			padding-bottom: 15px;
+			padding: 20px;
+
+			&:last-child {
+				border-bottom: none;
+			}
+
+			&.active {
+				.transition(all .3s ease-in-out);
+				.animation(flash 2s linear .5s);
+			}
+		}
+	}
+}
+
+
+@keyframes flash {
+	0% {background-color: #fff;};
+	25% {background-color: #eaeaea;};
+	50% {background-color: #fff;};
+	75% {background-color: #eee};
+	100% {background-color: #fff};
+}
+
+@media (max-width: @screen-sm) {
+	.faq {
+		padding-top: 30px;
+
+		&__nav {
+			margin-bottom: 30px;
+		}
+	}
+}

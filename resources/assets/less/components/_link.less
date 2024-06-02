@@ -1,0 +1,25 @@
+
+/*
+ * Link
+ *  
+ * Basic link component
+ */
+
+.link { 
+	color: #000;
+	.transition(color .2s ease);
+
+	&:hover {
+		color: @brand-blue;
+	}
+ }
+
+ .link-wrapper {
+ 	position: absolute;
+ 	top: 0;
+ 	right: 0;
+ 	bottom: 0;
+ 	left: 0;
+ 	background-color: rgba(0, 0, 0, 0.2);
+ 	.radius(4px);
+ }

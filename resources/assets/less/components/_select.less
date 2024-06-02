@@ -1,0 +1,29 @@
+.select {
+    cursor: pointer;
+    position: relative;
+    font-size: 16px;
+    color: @color-gray;
+    width: 100%;
+    height: 42px;
+    display: block;
+    padding: 10px ;
+    line-height: 1.25;
+    background-image: none;
+    background-color: #fff;
+    -webkit-background-clip: padding-box;
+    background-clip: padding-box;
+    border: 1px solid @color-gray;
+    .radius(4px);
+    .transition(.2s);
+    &:hover {
+      background-color: lighten(@color-gray, 5%);
+    }
+    &:focus {
+      border: 1px solid darken(@color-gray, 10%)
+    }
+    &:disabled {
+        background-color: @color-gray;
+        color: @color-gray;
+        cursor: default;
+    }
+}

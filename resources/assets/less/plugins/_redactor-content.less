@@ -1,0 +1,101 @@
+.redactor-content{
+	p{		
+		font-size: 16px;
+		line-height: @line-height;
+		margin-bottom: 20px;
+	}
+
+	img{
+		vertical-align: middle;
+		background-position: center center;
+		background-repeat: no-repeat;
+		-webkit-background-size: cover;
+		background-size: cover;
+	}
+
+	h3{
+		font: 36px "BebasNeueBold";
+		line-height: .8;
+		margin-bottom: 20px;
+	}
+
+	
+	ul{
+		padding-left: 40px;
+		list-style: circle;
+		padding-top: 10px;
+		margin-bottom: 20px;
+	}
+
+	ol {
+		padding-left: 40px;
+		padding-top: 10px;
+	}	
+
+	li{
+		font-size: 17px;
+		margin-bottom: 10px;
+	}
+
+
+	a{
+		color: @red;
+		text-decoration: underline;
+
+		&:hover{
+			color: @red;
+			text-decoration: none;
+		}
+	}
+
+	b, strong{
+		font-weight: 700;
+	}
+
+	table{
+		max-width: 100%;
+		width: 100%;
+		background-color: #fff;
+		border: 0;
+		overflow: auto;
+		margin-bottom: 15px;
+
+		& p {
+			padding-bottom: 8px;
+		}
+	}
+
+	tr{
+		font: 18px @font-bold;
+	}
+
+	th, td{
+		padding: 16px 24px;
+		border: 2px solid #D6D6D6;
+		
+		&:first-child {
+			width: 54%;
+		}
+
+		&:not(:first-child) {
+			text-align: center;
+		}
+	}
+
+	th{
+		font-family: @font-bold;
+	}
+
+	td{
+		font-weight: normal;
+		
+		&, & p {
+			
+			font-family: sans-serif;
+		}
+	}
+}
+
+.table-responsive {
+	overflow-x: auto;
+}

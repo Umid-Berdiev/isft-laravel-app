@@ -1,0 +1,53 @@
+/*
+ * Socials
+ *
+ * Create reusable social elements
+ * use font icons which you define 
+ * in 'components/_icon.less'.
+ */
+
+.socials{
+	float: left;
+	margin: 10px 0;
+	margin-top: 20px;
+	// 
+	&__icon{
+		margin-right: 30px;
+		.transition(.3s all);
+		width: 22px;
+		height: 22px;
+		font-size: 22px;
+		color: @white;
+
+		&:hover{
+			opacity: .8;
+		}
+	}
+}
+
+
+//___________________________________________________________________
+
+@media(max-width: 992px){
+	.socials{
+		margin-left: 8px;
+
+		&__icon{
+			margin-right: 15px;
+		}
+
+		a:last-child .socials__icon {
+			font-size: 18px;
+		}
+	}
+}
+//___________________________________________________________________
+
+@media(max-width: 768px){
+	.socials{
+		&__icon{
+			margin: 0 5px 15px;
+			display: block;
+		}
+	}
+}

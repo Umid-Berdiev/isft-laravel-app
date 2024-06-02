@@ -1,0 +1,57 @@
+/* 
+ * UI Input group
+ *
+ * Use this module to create input-groups
+ * it is basically two elements next to each other
+ */
+
+.input-group {
+	position: relative;
+	display: table;
+	border-collapse: separate;
+	width: 100%;
+}
+
+.form-control {
+	padding-left: 40px;
+	min-height: 50px;
+	max-height: 50px;
+}
+
+.input-group .form-control {
+	position: relative;
+    z-index: 2;
+    float: left;
+    width: 100%;
+    margin-bottom: 0;
+    display: table-cell;
+}
+
+.btn-group .btn {
+	margin-left: -1px;
+	font-size: 16px;
+	min-height: 50px;
+	max-height: 50px;
+}
+
+.input-group-btn .btn-group {
+    display: flex !important;
+}
+
+.input-group-btn {
+	position: relative;
+	font-size: 0;
+	white-space: nowrap;
+	display: table-cell;
+	vertical-align: middle;
+	width: 1%;
+	z-index: 2;
+}
+
+.input-search-icon{
+	position: absolute;
+	top: 17px;
+	left: 15px;
+	color: @grey;
+	z-index: 15;
+}

@@ -1,0 +1,109 @@
+.news-card{
+	margin-bottom: 30px;
+	width: 100%;
+
+	&__thumb {
+		width: 100%;
+		background: no-repeat center;
+		background-size: cover;
+		height: 340px;
+	}
+
+	&__img{
+		background-position: center center;
+		background-repeat: no-repeat;
+		-webkit-background-size: cover;
+		background-size: cover;
+		height: 224px;
+	}
+
+	&__info{
+		min-height: 195px;
+		position: relative;
+		padding: 20px 0 55px;
+
+		&--low-height {
+			min-height: 187px;
+			padding-bottom: 0;
+
+			& .news-card__title {
+			    margin-bottom: 15px;
+			}
+
+			& .news-card__text {
+				max-height: 58px;
+			    overflow: hidden;
+			}
+
+			& .news-card__btn {
+				position: relative!important;
+				bottom: 0;
+			}
+
+			&.news-card__info--sidebar {
+				min-height: 120px;
+				padding-bottom: 30px;
+			}
+		}
+		
+		&--white{
+			padding: 20px 15px;
+			background-color: @white;
+		}
+	}
+
+	&__date{
+		font: 14px "MuseoSansLight";
+		color: #BDBDBD;
+		margin-bottom: 10px;
+	}
+
+	&__title{
+		font: 36px "BebasNeueBold";
+		line-height: .8;
+		margin-bottom: 5px;
+
+		&--sm{
+			font-size: 28px;
+		}
+	}
+
+	&__text{
+		margin-bottom: 15px;
+	}
+
+	&__btn{
+		position: absolute!important;
+		bottom: 20px;
+	}
+}
+
+//________________________________________________________________________________
+
+@media(max-width: 1200px){
+	.news-card{
+
+		&__info{
+			min-height: 170px;
+		}
+
+		&__title{
+			font-size: 28px;
+		}
+
+		&__text{
+			display: none;
+		}
+	}
+}
+//________________________________________________________________________________
+
+@media(max-width: 992px){
+	.news-card{
+
+		&__info{
+			padding: 20px 15px;
+			background-color: @white;
+		}
+	}
+}
