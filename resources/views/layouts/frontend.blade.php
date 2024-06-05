@@ -80,9 +80,42 @@
     </script>
     <!-- End Google Tag Manager -->
     <meta name="facebook-domain-verification" content="dx6yyf3wutq7m5ao6kudpbpneibrkf" />
+
+    {{-- pulsing effect --}}
+    <style>
+        .pulse {
+            animation: pulse 2s infinite;
+            width: 100%;
+            height: 100%;
+            border-radius: 50%;
+        }
+
+        @keyframes pulse {
+            0% {
+                transform: scale(1);
+                box-shadow: 0 0 0 0 rgba(0, 123, 255, 0.7);
+            }
+
+            /* 33% {
+                transform: scale(1);
+                box-shadow: 0 0 0 4px rgba(0, 123, 255, 0);
+            } */
+
+            70% {
+                transform: scale(1);
+                box-shadow: 0 0 0 10px rgba(0, 123, 255, 0);
+            }
+
+            100% {
+                transform: scale(1);
+                box-shadow: 0 0 0 0 rgba(0, 123, 255, 0);
+            }
+        }
+    </style>
 </head>
 
-<body class="{{ LaravelLocalization::getSupportedLocales()[App::getLocale()]['native'] == 'Ўзб' ? 'cyrillic' : '' }}">
+<body
+    class="position-relative {{ LaravelLocalization::getSupportedLocales()[App::getLocale()]['native'] == 'Ўзб' ? 'cyrillic' : '' }}">
     <!-- Google Tag Manager (noscript) -->
     <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-PGKTVBX" height="0" width="0"
             style="display:none;visibility:hidden"></iframe></noscript>
@@ -128,7 +161,7 @@
                     <a class="navbar__link">
                         <span>
                             <i class="icon-arrow-left navbar-dropdown__icon"></i>
-                            @lang('main.menu.program')
+                            @lang('main.menu.bakalavriat')
                         </span>
                     </a>
                     <div class="navbar-dropdown js-navbar-dropdown">
@@ -225,6 +258,90 @@
 						<a href="#" class="navbar-dropdown__link">@lang('main.menu.lvl_up')</a>
 						<a href="#" class="navbar-dropdown__link">@lang('main.menu.career')</a>
 						--}}
+                    </div>
+                </li>
+                <li class="navbar__item js-navbar-item {{ request()->is('*curriculum*') ? 'active' : '' }}">
+                    <a class="navbar__link">
+                        <span>
+                            <i class="icon-arrow-left navbar-dropdown__icon"></i>
+                            @lang('main.menu.magistratura')
+                        </span>
+                    </a>
+                    <div class="navbar-dropdown js-navbar-dropdown">
+                        <button class="navbar-dropdown__dismisser js-navbar-dropdown-dismisser"><i
+                                class="icon-arrow-right"></i></button>
+                        <div
+                            class="navbar-dropdown__link navbar-dropdown__link--dropdown js-navbar-dropdown-wrap-toggler">
+                            <span>
+                                <i class="icon-arrow-left navbar-dropdown__icon"></i>
+                                @lang('main.menu.accounting')
+                            </span>
+                            {{-- <div class="navbar-dropdown-wrap js-navbar-dropdown-wrap z-index-2">
+                                <button class="navbar-dropdown__dismisser js-navbar-dropdown-wrap-dismisser"><i
+                                        class="icon-arrow-right"></i></button>
+                                <a href="{{ action('PageController@show', 'obshcheobrazovatelnyy-kurs') }}"
+                                    class="navbar-dropdown__link">@lang('main.menu.preparatory_course')</a>
+                                <a href="{{ action('PageController@show', 'obshcheobrazovatelnyy-1-yy-kurs-zaochnaya-forma-obucheniya') }}"
+                                    class="navbar-dropdown__link">@lang('main.menu.foundation_course')</a>
+                                <div
+                                    class="navbar-dropdown__link navbar-dropdown__link--dropdown js-navbar-dropdown-wrap-toggler">
+                                    <span>
+                                        <i class="icon-arrow-left navbar-dropdown__icon"></i>
+                                        @lang('main.menu.undergraduate')
+                                    </span>
+                                    <div class="navbar-dropdown-wrap js-navbar-dropdown-wrap">
+                                        <button class="navbar-dropdown__dismisser js-navbar-dropdown-wrap-dismisser"><i
+                                                class="icon-arrow-right"></i></button>
+                                        <a
+                                            href="{{ action('PageController@show', 'osnovnoy-bakalavriat') }}">@lang('main.menu.accounting')</a>
+                                        <a
+                                            href="{{ action('PageController@show', 'bachelors-in-business-management') }}">@lang('main.menu.management_business')</a>
+                                        <a
+                                            href="{{ action('PageController@show', 'informatsionnye-tekhnologii-dlya-predprinimatelstva') }}">@lang('main.menu.IT')</a>
+                                    </div>
+                                </div>
+                            </div> --}}
+                        </div>
+                        <div
+                            class="navbar-dropdown__link navbar-dropdown__link--dropdown js-navbar-dropdown-wrap-toggler">
+                            <span>
+                                <i class="icon-arrow-left navbar-dropdown__icon"></i>
+                                @lang('main.menu.foreign_language_and_literature')
+                            </span>
+                            {{-- <div class="navbar-dropdown-wrap js-navbar-dropdown-wrap z-index-2">
+                                <button class="navbar-dropdown__dismisser js-navbar-dropdown-wrap-dismisser"><i
+                                        class="icon-arrow-right"></i></button>
+                                <a href="{{ action('PageController@show', 'bakalavriat-nachalnogo-obrazovaniya') }}"
+                                    class="navbar-dropdown__link">@lang('main.menu.nachalnogo_obrazovaniya')</a>
+                                <a href="{{ action('PageController@show', 'bakalavriat-doshkolnogo-obrazovaniya') }}"
+                                    class="navbar-dropdown__link">@lang('main.menu.doshkolnogo_obrazovaniya')</a>
+                                <a href="{{ action('PageController@show', 'bakalavriat-inostrannogo-yazyka-i-literatury') }}"
+                                    class="navbar-dropdown__link">@lang('main.menu.inostrannogo_yazyka')</a>
+                                <a href="{{ action('PageController@show', 'bakalavriat-pedagogiki-i-psikhologii') }}"
+                                    class="navbar-dropdown__link">@lang('main.menu.pedagogiki_i_psikhologii')</a>
+                                <a href="{{ action('PageController@show', 'filologiya-va-tillarni-oqitish') }}"
+                                    class="navbar-dropdown__link">@lang('main.menu.filology')</a>
+                            </div> --}}
+                        </div>
+                        <div
+                            class="navbar-dropdown__link navbar-dropdown__link--dropdown js-navbar-dropdown-wrap-toggler">
+                            <span>
+                                <i class="icon-arrow-left navbar-dropdown__icon"></i>
+                                @lang('main.menu.pedagogy_and_psychology')
+                            </span>
+                            {{-- <div class="navbar-dropdown-wrap js-navbar-dropdown-wrap z-index-2">
+                                <button class="navbar-dropdown__dismisser js-navbar-dropdown-wrap-dismisser"><i
+                                        class="icon-arrow-right"></i></button>
+                                <a href="{{ action('PageController@show', 'bank-ishi-va-audit') }}"
+                                    class="navbar-dropdown__link">@lang('main.menu.bank_and_audit')</a>
+                                <a href="{{ action('PageController@show', 'marketing') }}"
+                                    class="navbar-dropdown__link">@lang('main.menu.marketing')</a>
+                                <a href="{{ action('PageController@show', 'iqtisodiy-xavfsizlik') }}"
+                                    class="navbar-dropdown__link">@lang('main.menu.ecomonic_security')</a>
+                                <a href="{{ action('PageController@show', 'iqtisodiyot') }}"
+                                    class="navbar-dropdown__link">@lang('main.menu.economy')</a>
+                            </div> --}}
+                        </div>
                     </div>
                 </li>
                 <li class="navbar__item js-navbar-item {{ request()->is('*issledovanie*') ? 'active' : '' }}">
@@ -415,10 +532,17 @@
         </div>
     </section>
 
+    <div style="width: 64px; height: 64px; position: fixed; right: calc(5% - 32px); bottom: 10%;">
+        {{-- telegram icon --}}
+        <a href="https://t.me/isftqabul24_bot" target="_blank">
+            <img class="pulse" src="/assets/images/telegram_logo.png" alt="Telegram icon">
+        </a>
+    </div>
+
     <script type="text/javascript" src="{{ asset('assets/js/jquery.min.js') }}"></script>
     <script type="text/javascript" src="{{ asset('assets/js/main.js') }}"></script>
     <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
-    <script>
+    {{-- <script>
         (function(a, m, o, c, r, m) {
             a[m] = {
                 id: "387973",
@@ -439,8 +563,10 @@
             s.src = 'https://gso.amocrm.ru/js/button.js?1686473732';
             d.head && d.head.appendChild(s)
         }(window, 0, 'amoSocialButton', 0, 0, 'amo_social_button'));
-    </script>
-    <script>
+    </script> --}}
+
+    {{-- telegram button --}}
+    {{-- <script>
         (function(a, m, o, c, r, m) {
             a[m] = {
                 id: "387973",
@@ -461,7 +587,9 @@
             s.src = 'https://gso.amocrm.ru/js/button.js?1686473732';
             d.head && d.head.appendChild(s)
         }(window, 0, 'amoSocialButton', 0, 0, 'amo_social_button'));
-    </script>
+    </script> --}}
+
+    {{-- call center button --}}
     <script src="https://callback3.onlinepbx.uz/?cb-id=8fe0b09e-59a8-4869-b2ec-32d8b7c64773"></script>
     @yield('scripts')
 </body>

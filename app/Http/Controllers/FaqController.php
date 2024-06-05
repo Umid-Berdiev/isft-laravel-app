@@ -9,8 +9,20 @@ class FaqController extends Controller
 {
     public function index()
     {
-    	$items = Faq::latest()->get();
+        $data = Faq::latest()->get();
 
-    	return view('frontend.faq.index', compact('items'));
+        $items = [
+            $data->find(16),
+            $data->find(10),
+            $data->find(22),
+            $data->find(17),
+            $data->find(18),
+            $data->find(23),
+            $data->find(19),
+            $data->find(15),
+            $data->find(14),
+        ];
+
+        return view('frontend.faq.index', compact('items'));
     }
 }
