@@ -270,78 +270,12 @@
                     <div class="navbar-dropdown js-navbar-dropdown">
                         <button class="navbar-dropdown__dismisser js-navbar-dropdown-dismisser"><i
                                 class="icon-arrow-right"></i></button>
-                        <div
-                            class="navbar-dropdown__link navbar-dropdown__link--dropdown js-navbar-dropdown-wrap-toggler">
-                            <span>
-                                <i class="icon-arrow-left navbar-dropdown__icon"></i>
-                                @lang('main.menu.accounting')
-                            </span>
-                            {{-- <div class="navbar-dropdown-wrap js-navbar-dropdown-wrap z-index-2">
-                                <button class="navbar-dropdown__dismisser js-navbar-dropdown-wrap-dismisser"><i
-                                        class="icon-arrow-right"></i></button>
-                                <a href="{{ action('PageController@show', 'obshcheobrazovatelnyy-kurs') }}"
-                                    class="navbar-dropdown__link">@lang('main.menu.preparatory_course')</a>
-                                <a href="{{ action('PageController@show', 'obshcheobrazovatelnyy-1-yy-kurs-zaochnaya-forma-obucheniya') }}"
-                                    class="navbar-dropdown__link">@lang('main.menu.foundation_course')</a>
-                                <div
-                                    class="navbar-dropdown__link navbar-dropdown__link--dropdown js-navbar-dropdown-wrap-toggler">
-                                    <span>
-                                        <i class="icon-arrow-left navbar-dropdown__icon"></i>
-                                        @lang('main.menu.undergraduate')
-                                    </span>
-                                    <div class="navbar-dropdown-wrap js-navbar-dropdown-wrap">
-                                        <button class="navbar-dropdown__dismisser js-navbar-dropdown-wrap-dismisser"><i
-                                                class="icon-arrow-right"></i></button>
-                                        <a
-                                            href="{{ action('PageController@show', 'osnovnoy-bakalavriat') }}">@lang('main.menu.accounting')</a>
-                                        <a
-                                            href="{{ action('PageController@show', 'bachelors-in-business-management') }}">@lang('main.menu.management_business')</a>
-                                        <a
-                                            href="{{ action('PageController@show', 'informatsionnye-tekhnologii-dlya-predprinimatelstva') }}">@lang('main.menu.IT')</a>
-                                    </div>
-                                </div>
-                            </div> --}}
-                        </div>
-                        <div
-                            class="navbar-dropdown__link navbar-dropdown__link--dropdown js-navbar-dropdown-wrap-toggler">
-                            <span>
-                                <i class="icon-arrow-left navbar-dropdown__icon"></i>
-                                @lang('main.menu.foreign_language_and_literature')
-                            </span>
-                            {{-- <div class="navbar-dropdown-wrap js-navbar-dropdown-wrap z-index-2">
-                                <button class="navbar-dropdown__dismisser js-navbar-dropdown-wrap-dismisser"><i
-                                        class="icon-arrow-right"></i></button>
-                                <a href="{{ action('PageController@show', 'bakalavriat-nachalnogo-obrazovaniya') }}"
-                                    class="navbar-dropdown__link">@lang('main.menu.nachalnogo_obrazovaniya')</a>
-                                <a href="{{ action('PageController@show', 'bakalavriat-doshkolnogo-obrazovaniya') }}"
-                                    class="navbar-dropdown__link">@lang('main.menu.doshkolnogo_obrazovaniya')</a>
-                                <a href="{{ action('PageController@show', 'bakalavriat-inostrannogo-yazyka-i-literatury') }}"
-                                    class="navbar-dropdown__link">@lang('main.menu.inostrannogo_yazyka')</a>
-                                <a href="{{ action('PageController@show', 'bakalavriat-pedagogiki-i-psikhologii') }}"
-                                    class="navbar-dropdown__link">@lang('main.menu.pedagogiki_i_psikhologii')</a>
-                                <a href="{{ action('PageController@show', 'filologiya-va-tillarni-oqitish') }}"
-                                    class="navbar-dropdown__link">@lang('main.menu.filology')</a>
-                            </div> --}}
-                        </div>
-                        <div
-                            class="navbar-dropdown__link navbar-dropdown__link--dropdown js-navbar-dropdown-wrap-toggler">
-                            <span>
-                                <i class="icon-arrow-left navbar-dropdown__icon"></i>
-                                @lang('main.menu.pedagogy_and_psychology')
-                            </span>
-                            {{-- <div class="navbar-dropdown-wrap js-navbar-dropdown-wrap z-index-2">
-                                <button class="navbar-dropdown__dismisser js-navbar-dropdown-wrap-dismisser"><i
-                                        class="icon-arrow-right"></i></button>
-                                <a href="{{ action('PageController@show', 'bank-ishi-va-audit') }}"
-                                    class="navbar-dropdown__link">@lang('main.menu.bank_and_audit')</a>
-                                <a href="{{ action('PageController@show', 'marketing') }}"
-                                    class="navbar-dropdown__link">@lang('main.menu.marketing')</a>
-                                <a href="{{ action('PageController@show', 'iqtisodiy-xavfsizlik') }}"
-                                    class="navbar-dropdown__link">@lang('main.menu.ecomonic_security')</a>
-                                <a href="{{ action('PageController@show', 'iqtisodiyot') }}"
-                                    class="navbar-dropdown__link">@lang('main.menu.economy')</a>
-                            </div> --}}
-                        </div>
+                        <a href="{{ action('PageController@show', 'bukhgalterskiy-uchet') }}"
+                            class="navbar-dropdown__link">@lang('main.menu.accounting')</a>
+                        <a href="{{ action('PageController@show', 'inostrannyy-yazyk-i-literatura') }}"
+                            class="navbar-dropdown__link">@lang('main.menu.foreign_language_and_literature')</a>
+                        <a href="{{ action('PageController@show', 'pedagogika-i-psikhologiya') }}"
+                            class="navbar-dropdown__link">@lang('main.menu.pedagogy_and_psychology')</a>
                     </div>
                 </li>
                 <li class="navbar__item js-navbar-item {{ request()->is('*issledovanie*') ? 'active' : '' }}">
@@ -388,25 +322,6 @@
                 <li class="navbar__item {{ request()->is('*news*') ? 'active' : '' }}">
                     <a href="{{ route('news') }}" class="navbar__link">@lang('main.menu.news')</a>
                 </li>
-                {{-- HIDDEN LINKS
-				<li class="navbar__item">
-					<a href="#" class="navbar__link">@lang('main.menu.partnership')</a>
-				</li>
-				--}}
-                {{--				<li class="navbar__item {{ request()->is('*results*') ? 'active' : '' }}"> --}}
-                {{--					<a href="{{ route('results') }}" class="navbar__link">@lang('main.menu.results')</a> --}}
-                {{--				</li> --}}
-                {{--
-                <li class="navbar__item {{ request()->is('*faq*') ? 'active' : '' }}">
-                    <a href="{{ action('PageController@show', 'studencheskaya-zhizn') }}">@lang('main.menu.student')</a>
-                </li>
-                <li class="navbar__item {{ request()->is('*faq*') ? 'active' : '' }}">
-                    <a href="{{ action('PageController@show', 'platforma') }}">@lang('main.menu.platform')</a>
-                </li>
-                <li class="navbar__item {{ request()->is('*faq*') ? 'active' : '' }}">
-                    <a href="{{ action('PageController@show', 'pochemu-my') }}">@lang('main.menu.why_us')</a>
-                </li>
-				--}}
                 <li class="navbar__item {{ request()->is('*faq*') ? 'active' : '' }}">
                     <a href="{{ route('faq') }}" class="navbar__link">@lang('main.menu.faq')</a>
                 </li>

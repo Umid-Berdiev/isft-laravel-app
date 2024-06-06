@@ -78,7 +78,7 @@ class PageController extends Controller
 
     public function showZhizniKampusa($id)
     {
-        $item = News::find($id);
+        $item = News::findOrFail($id);
         $others = News::where('id', '!=', $item->id)
             ->where('alias', 'zhizni-kampusa')
             ->latest()

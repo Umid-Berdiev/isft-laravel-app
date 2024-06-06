@@ -58,7 +58,7 @@ return [
         'why_us' => 'Почему мы?',
         'bakalavriat' => 'Бакалавриат',
         'magistratura' => 'Магистратура',
-        'accounting' => 'Бухгалтерия',
+        'accounting' => 'Бухгалтерский учет',
         'foreign_language_and_literature' => 'Иностранный язык и литература',
         'pedagogy_and_psychology' => 'Педагогика и психология',
     ],
