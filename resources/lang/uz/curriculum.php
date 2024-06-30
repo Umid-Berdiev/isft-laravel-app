@@ -1,24 +1,24 @@
 <?php 
 	
 	return [
-		'title'	=>	'Dasturlar',
-		'0'	=>	'1 + 3 YIL (TAYYORLOV DASTURI (1 YIL) + ASOSIY DASTUR (3 YIL))',
-		'1'	=>	'Kirish talablari:',
-		'2'	=>	'- Matematikada kirish imtihoni 60%;',
-		'3'	=>	'- Inliz tili darajasi - ahamiyati yo\'q.',
-		'4'	=>	'Ushbu dastur talabani Asosiy Bakalavriatga tayyorlash uchun akademik dasturga kiritilgan. Keyingi ta’lim bosqichlari qat’iy akademik Ingliz tilida olib borilishini e’tiborga olgan holda
-		darslar qatiy ingliz tilida olib boriladi.Tayyorlov dasturini muvaffaqiyatli tugallgan holatda bizning talabalarimiz IELTS imtihonini topshirishadi va keyingi yilgi asosiy dasturga o\'tishadi.',
-		'5'	=>	'Kirish talablari:',
-		'6'	=>	'- Tayyorlov dasturini tugallagach IELTS seritifkatini olish (6.0 yoki yuqori) ',
-		'7'	=>	'3 YIL (ASOSIY DASTUR) – OXFORD BROOKES UNIVERSITY NING XALQARO AMALIY BUXGALTERIYA VA MOLIYA',
-		'8'	=>	'Kirish talablari:',
-		'9'	=>	'- Matematikadan kirish imtihoni 60%;',
-		'10'	=>	'- 5.5 yoki undan yuqori IELTS sertifikati;',
-		'11'	=>	'Ushbu yo’nalish o’z ichiga ACCA xalqaro dastur bo’yicha professional buxgalteriyani o’qitishni qamrab oladi. Talabalr ACCA ning 9ta maxsus asosiy predmetlaridan iborat dasturlarni va Iqtisodiyot, Akademik Ingliz tili, Shaxsiy rivojlanish va h.k. kabi bir qator fanlarni ham o’rganadilar. 
+		'title'	=>	'Дастурлар',
+		'0'	=>	'1 + 3 ЙИЛ (ТAЙЙОРЛОВ ДAСТУРИ (1 ЙИЛ) + AСОСИЙ ДAСТУР (3 ЙИЛ))',
+		'1'	=>	'Кириш талаблари:',
+		'2'	=>	'- Математикадан кириш имтиҳони 60%;',
+		'3'	=>	'- Инлиз тили даражаси - аҳамияти йўқ.',
+		'4'	=>	'Ушбу дастур талабани асосий бакалавриатга тайёрлаш учун академик дастурга киритилган. Кейинги таълим босқичлари қатъий академик инглиз тилида олиб борилишини еътиборга олган ҳолда
+		дарслар қатий инглиз тилида олиб борилади. Тайёрлов дастурини муваффақиятли тугаллган ҳолатда бизнинг талабаларимиз IELTS имтиҳонини топширишади ва кейинги йилги асосий дастурга ўтишади.',
+		'5'	=>	'Кириш талаблари:',
+		'6'	=>	'- Тайёрлов дастурини тугаллагач IELTS серитифкатини олиш (6.0 ёки юқори) ',
+		'7'	=>	'3 ЙИЛ (AСОСИЙ ДAСТУР) – OXFORD BROOKES UNIVERSITY НИНГ ХAЛҚAРО AМAЛИЙ БУХГAЛТЕРИЙA ВA МОЛИЙA',
+		'8'	=>	'Кириш талаблари:',
+		'9'	=>	'- Математикадан кириш имтиҳони 60%;',
+		'10'	=>	'- 5.5 ёки ундан юқори IELTS сертификати;',
+		'11'	=>	'Ушбу йўналиш ўз ичига ACCA халқаро дастур бўйича профессионал бухгалтерияни ўқитишни қамраб олади. Талабалр ACCA нинг 9 та махсус асосий предметларидан иборат дастурларни ва иқтисодиёт, академик инглиз тили, шахсий ривожланиш ва ҳ.к. каби бир қатор фанларни ҳам ўрганадилар. 
 ',
-		'12'	=>	'<span class="text-red">Darslar Ingliz tilida olib boriladi. </span> Shu sababli talabadan Ingliz tili darajasini kuchaytirish talab qilinadi.',
-		'13'	=>	'Agarda talaba IELTS dan 6.0 balda kam to\'plagan holatda (Reading 6.0 + Writing 6.0),
-		talaba Asosiy Dasturning 2-yili boshlanmasidan oldin IELTS ni qayta topshirish kerak bo\'ladi',
-		'14'	=>	'Darsliklar to\'plami (pdf)',
-		'15'	=>	'O\'quv dasturi (jpeg)'
+		'12'	=>	'<span class="text-red">Дарслар инглиз тилида олиб борилади. </span> Шу сабабли талабадан инглиз тили даражасини кучайтириш талаб қилинади.',
+		'13'	=>	'Aгарда талаба IELTS дан 6.0 балда кам тўплаган ҳолатда (Reading 6.0 + Writing 6.0),
+		талаба асосий дастурнинг 2-йили бошланмасидан олдин IELTS ни қайта топшириш керак бўладиъ',
+		'14'	=>	'Дарсликлар тўплами (pdf)',
+		'15'	=>	'Ўқув дастури (jpeg)'
 ];		

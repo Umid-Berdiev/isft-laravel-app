@@ -2,13 +2,13 @@
 	
 	return [
 		'success' => [
-	    	'insert' => 'Muvaffaqiyatli qo\'shildi',
-	    	'delete' => 'Успешно удалено',
-	    	'update' => 'Успешно изменен',
+	    	'insert' => 'Муваффақиятли қўшилди',
+	    	'delete' => 'Муваффақиятли ўчирилди',
+	    	'update' => 'Муваффақиятли ўзгартирилди',
     	],
     	
-    	'feedback'  =>  'Sizning arizangiz muvaffaqiyatli yuborildi. Tez orada sizga murojaat qilinadi',
+    	'feedback'  =>  'Сизнинг аризангиз муваффақиятли юборилди. Тез орада сизга мурожаат қилинади',
 
-    	'thank'	=>	'Rahmat',
-    	'insert' => 'Muvaffaqiyatli qo\'shildi',
+    	'thank'	=>	'Раҳмат',
+    	'insert' => 'Муваффақиятли қўшилди',
 	];
